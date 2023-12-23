@@ -1,0 +1,17 @@
+package sample;
+
+import java.util.Arrays;
+
+public class CheckArraysEquality {
+	public static void main(String[] args) {
+		int [] a= {1,2,3,4,5};
+		int [] b= {1,2,5,4,3};
+		Arrays.sort(b);
+		if(Arrays.equals(a, b))
+			System.out.println("arrays are equal");
+		else
+			System.out.println("arrays are not equal");
+				
+	}
+
+}

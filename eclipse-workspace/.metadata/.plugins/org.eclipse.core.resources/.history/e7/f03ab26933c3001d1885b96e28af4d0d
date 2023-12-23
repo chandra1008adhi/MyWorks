@@ -1,0 +1,17 @@
+package sample;
+
+public class MyException extends Exception {
+	
+	String desc;
+	
+	MyException(String desc){
+		this.desc=desc;
+	}
+
+	void method() {
+		System.out.println(desc);
+	}
+	
+
+}
+

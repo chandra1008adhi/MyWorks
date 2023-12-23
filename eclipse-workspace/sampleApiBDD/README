@@ -1,0 +1,45 @@
+Three Files
+	1.GetReq.java
+	2.PostReq.java
+	3.PutReq.java
+are created for running the test cases
+
+Test cases designed for each end-point separately in each file for GET, POST and PUT operations.
+GetReq.java
+	TestCase1: //validateResponseCode()
+		It is positive scenario for verifying the functionality of the GET end point.
+		A GET Operation is performed an the results are retrieved, status code is verified.
+	TestCase2: //getFirstNameAndEmail()
+		This scenario is used to filter the Firstname and email of the users retrieved from the GET operation.
+		A GET operation is performed response is filtered for the firstname and email using JsonPath object.
+	Generic method //readId()
+		This method is created for reading the ID from the user,
+		which is further used for filtering the user based on ID
+		
+	TestCase3: //userDetailsPerId()
+		This scenario is used to filter the user based on ID from the users retrieved from the GET operation.
+		A GET operation is performed response is filtered for the user using JsonPath object.
+
+PostReq.java
+	TestCase1: //postRequest()
+		It is positive scenario for verifying the functionality of the POST end point.
+		A POST Operation is performed an the results are retrieved, status code is verified.
+	TestCase2: //retrieveNewId()
+		This scenario is for creating a new user and retrieving the newly created ID.
+		A POST operation is performed response parsed for the ID using JsonPath object.
+	TestCase3: //validateUser()
+		This scenario is for validating the user details.
+		A POST operation is performed response parsed for first name and last name using JsonPath object.
+
+PutReq.java
+	TestCase1: //createNewUser()
+		This scenario is for creating a new user.
+		A POST operation is performed and newly created ID is retrieved.
+	TestCase2: //updateUser()
+		This scenario is for updating an existing user based on ID.
+		An PUT operation is performed, existing user is updated and the status code is validated. 
+	TestCase3: //validateUpdatedUser()
+		This scenario is for validating the updated user.
+		An PUT operation is performed, existing user is updated and the user details is validated.
+		
+Test report in the test-output/index.html.

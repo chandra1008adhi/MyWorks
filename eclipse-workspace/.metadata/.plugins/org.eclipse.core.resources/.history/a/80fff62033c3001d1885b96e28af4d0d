@@ -1,0 +1,18 @@
+package sample;
+
+public class MyException extends Exception {
+	
+	String desc;
+	
+	MyException(String desc){
+		this.desc=desc;
+	}
+
+	void myException() throws MyException
+	{
+		throw new MyException("MyException");
+	}
+	
+
+}
+
